@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalCrush - Celebrity Lifestyle & Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- PopAds Popunder -->
+<script>/* PopAds Popunder - placeholder */</script>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="header-logo">Global<span>Crush</span></a>
+        <nav class="header-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="pages/category.html">Categories</a>
+            <a href="pages/trending.html">Trending</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <button class="header-search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+            <button class="header-menu-btn" id="menuBtn"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-panel">
+        <div class="mobile-menu-header">
+            <h3>Menu</h3>
+            <button class="mobile-menu-close" id="menuClose"><i class="fas fa-times"></i></button>
+        </div>
+        <a href="index.html" class="mobile-nav-link active">Home</a>
+        <a href="pages/category.html" class="mobile-nav-link">Categories</a>
+        <a href="pages/trending.html" class="mobile-nav-link">Trending</a>
+        <a href="pages/about.html" class="mobile-nav-link">About</a>
+        <a href="pages/contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+</div>
+
+<!-- Search Overlay -->
+<div class="search-overlay" id="searchOverlay">
+    <div class="search-box">
+        <input type="text" placeholder="Search articles..." id="searchInput">
+        <button id="searchClose"><i class="fas fa-search"></i></button>
+    </div>
+</div>
+
+<!-- HilltopAds 728x90 TOP -->
+<div class="ad-top">
+    <div class="container">
+        <div class="ad-frame">
+            <span>728×90 Advertisement</span>
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <span class="hero-badge">Trending Now</span>
+            <h1 class="hero-title">Your Daily Dose of <span>Style</span> & <span>Celebrity</span> Lifestyle</h1>
+            <p class="hero-subtitle">Discover the latest fashion trends, beauty tips, and celebrity lifestyle inspiration from around the world.</p>
+            <a href="pages/category.html" class="hero-btn">Explore Categories <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Live Trending News (Auto-updated via GNews API) -->
+<section class="live-news-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-fire" style="color: #ff5722;"></i> Trending Now</h2>
+            <span class="live-badge"><span class="live-dot"></span> LIVE</span>
+        </div>
+        <div class="live-news-grid" id="liveNewsGrid">
+            <div class="live-loading"><i class="fas fa-spinner fa-spin"></i> Loading latest stories...</div>
+        </div>
+    </div>
+</section>
+
+<!-- HilltopAds 300x250 AFTER LIVE -->
+<div class="ad-mid">
+    <div class="ad-frame">
+        <span>300x250 Advertisement</span>
+    </div>
+</div>
+
+<!-- Featured Section -->
+<section class="featured-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Featured Stories</h2>
+            <a href="pages/trending.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="featured-grid">
+            <div class="featured-card featured-main">
+                <div class="featured-img img-auto-motion">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=500&fit=crop" alt="Summer Fashion">
+                </div>
+                <div class="featured-content">
+                    <span class="category-badge">Fashion</span>
+                    <h3>20 Most Iconic Summer Fashion Moments of 2026</h3>
+                    <p>From red carpet events to street style, these fashion moments defined the season.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 10, 2026</span>
+                        <span><i class="far fa-eye"></i> 24.5K views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-card featured-side">
+                <div class="featured-img img-zoom-rotate">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=300&fit=crop" alt="Beauty Trends">
+                </div>
+                <div class="featured-content">
+                    <span class="category-badge">Beauty</span>
+                    <h3>Glow Up: Celebrity Beauty Secrets Revealed</h3>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 8, 2026</span>
+                        <span><i class="far fa-eye"></i> 18.2K views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-card featured-side">
+                <div class="featured-img img-zoom-rotate">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=300&fit=crop" alt="Beach Style">
+                </div>
+                <div class="featured-content">
+                    <span class="category-badge">Beach & Swimwear</span>
+                    <h3>Beach Body Confidence: Swimwear Trends We Love</h3>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 6, 2026</span>
+                        <span><i class="far fa-eye"></i> 15.8K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HilltopAds 300x250 MID -->
+<div class="ad-mid">
+    <div class="ad-frame">
+        <span>300×250 Advertisement</span>
+    </div>
+</div>
+
+<!-- Fashion Section -->
+<section class="category-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-tshirt"></i> Latest in Fashion</h2>
+            <a href="pages/category.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&h=500&fit=crop" alt="Fashion 1">
+                        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&h=500&fit=crop" alt="Fashion 2">
+                    </div>
+                    <span class="category-badge">Fashion</span>
+                </div>
+                <div class="card-content">
+                    <h3>10 Stunning Fashion Trends Taking Over This Season</h3>
+                    <p>From oversized blazers to bold prints, these trends are everywhere.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 9, 2026</span>
+                        <span><i class="far fa-eye"></i> 12.3K views</span>
+                    </div>
+                    <a href="#" class="smartlink-btn">See More</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=400&h=500&fit=crop" alt="Fashion 3">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="Fashion 4">
+                    </div>
+                    <span class="category-badge">Fashion</span>
+                </div>
+                <div class="card-content">
+                    <h3>How to Style a Little Black Dress for Any Occasion</h3>
+                    <p>The LBD is back and better than ever. Here's how to rock it.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 7, 2026</span>
+                        <span><i class="far fa-eye"></i> 9.8K views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=500&fit=crop" alt="Fashion 5">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=500&fit=crop" alt="Fashion 6">
+                    </div>
+                    <span class="category-badge">Fashion</span>
+                </div>
+                <div class="card-content">
+                    <h3>Designer Dupes That Look Like a Million Bucks</h3>
+                    <p>Affordable alternatives to high-end designer pieces you'll love.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 5, 2026</span>
+                        <span><i class="far fa-eye"></i> 11.1K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ad Grid Item -->
+<div class="ad-mid">
+    <div class="ad-frame">
+        <span>300×250 Advertisement</span>
+    </div>
+</div>
+
+<!-- Beauty Section -->
+<section class="category-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-spa"></i> Latest in Beauty</h2>
+            <a href="pages/category.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&h=500&fit=crop" alt="Beauty 1">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop" alt="Beauty 2">
+                    </div>
+                    <span class="category-badge">Beauty</span>
+                </div>
+                <div class="card-content">
+                    <h3>15 Skincare Routines of the World's Most Beautiful Women</h3>
+                    <p>Discover the beauty secrets that keep celebrities looking flawless.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 8, 2026</span>
+                        <span><i class="far fa-eye"></i> 16.7K views</span>
+                    </div>
+                    <a href="#" class="smartlink-btn">See More</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=500&fit=crop" alt="Beauty 3">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=400&h=500&fit=crop" alt="Beauty 4">
+                    </div>
+                    <span class="category-badge">Beauty</span>
+                </div>
+                <div class="card-content">
+                    <h3>Natural Makeup Looks That Turn Heads</h3>
+                    <p>Less is more with these gorgeous minimalist beauty looks.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 6, 2026</span>
+                        <span><i class="far fa-eye"></i> 13.4K views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=400&h=500&fit=crop" alt="Beauty 5">
+                        <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=400&h=500&fit=crop" alt="Beauty 6">
+                    </div>
+                    <span class="category-badge">Beauty</span>
+                </div>
+                <div class="card-content">
+                    <h3>Hair Trends That Will Dominate 2026</h3>
+                    <p>From bold colors to effortless waves, these styles are everywhere.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 4, 2026</span>
+                        <span><i class="far fa-eye"></i> 10.2K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Beach & Swimwear Section -->
+<section class="category-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-umbrella-beach"></i> Latest in Beach & Swimwear</h2>
+            <a href="pages/category.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=400&h=500&fit=crop" alt="Beach 1">
+                        <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=400&h=500&fit=crop" alt="Beach 2">
+                    </div>
+                    <span class="category-badge">Beach & Swimwear</span>
+                </div>
+                <div class="card-content">
+                    <h3>Summer Beach Looks That Are Pure Vacation Goals</h3>
+                    <p>From sandy shores to pool parties, these swimwear picks are fire.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 10, 2026</span>
+                        <span><i class="far fa-eye"></i> 20.1K views</span>
+                    </div>
+                    <a href="#" class="smartlink-btn">See More</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400&h=500&fit=crop" alt="Beach 3">
+                        <img src="https://images.unsplash.com-photo-1523264766585-4c3b80e0e39c?w=400&h=500&fit=crop" alt="Beach 4">
+                    </div>
+                    <span class="category-badge">Beach & Swimwear</span>
+                </div>
+                <div class="card-content">
+                    <h3>Beach Cover-Ups That Transition Perfectly to Brunch</h3>
+                    <p>Stay stylish from sand to street with these versatile pieces.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 8, 2026</span>
+                        <span><i class="far fa-eye"></i> 14.6K views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400&h=500&fit=crop" alt="Beach 5">
+                        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=500&fit=crop" alt="Beach 6">
+                    </div>
+                    <span class="category-badge">Beach & Swimwear</span>
+                </div>
+                <div class="card-content">
+                    <h3>Top 10 Swimwear Brands You Need to Know</h3>
+                    <p>These brands are making waves with their latest collections.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 6, 2026</span>
+                        <span><i class="far fa-eye"></i> 11.9K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ad Grid Item -->
+<div class="ad-mid">
+    <div class="ad-frame">
+        <span>300×250 Advertisement</span>
+    </div>
+</div>
+
+<!-- Nightlife & Club Section -->
+<section class="category-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-cocktail"></i> Latest in Nightlife & Club</h2>
+            <a href="pages/category.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=400&h=500&fit=crop" alt="Nightlife 1">
+                        <img src="https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?w=400&h=500&fit=crop" alt="Nightlife 2">
+                    </div>
+                    <span class="category-badge">Nightlife & Club</span>
+                </div>
+                <div class="card-content">
+                    <h3>Party Night Outfits That Steal the Spotlight</h3>
+                    <p>Turn heads at every club with these show-stopping looks.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 9, 2026</span>
+                        <span><i class="far fa-eye"></i> 17.3K views</span>
+                    </div>
+                    <a href="#" class="smartlink-btn">See More</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1517365830472-7aa94ce11606?w=400&h=500&fit=crop" alt="Nightlife 3">
+                        <img src="https://images.unsplash.com/photo-1510972527921-ce03766a1d86?w=400&h=500&fit=crop" alt="Nightlife 4">
+                    </div>
+                    <span class="category-badge">Nightlife & Club</span>
+                </div>
+                <div class="card-content">
+                    <h3>The Ultimate Guide to VIP Club Fashion</h3>
+                    <p>Dress to impress with these high-end nightlife styles.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 7, 2026</span>
+                        <span><i class="far fa-eye"></i> 12.8K views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=400&h=500&fit=crop" alt="Nightlife 5">
+                        <img src="https://images.unsplash.com/photo-1514315384763-ba401779410f?w=400&h=500&fit=crop" alt="Nightlife 6">
+                    </div>
+                    <span class="category-badge">Nightlife & Club</span>
+                </div>
+                <div class="card-content">
+                    <h3>Best Cities for Nightlife According to Influencers</h3>
+                    <p>These hotspots are where the party never stops.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 5, 2026</span>
+                        <span><i class="far fa-eye"></i> 9.4K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Street Style Section -->
+<section class="category-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-road"></i> Latest in Street Style</h2>
+            <a href="pages/category.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop" alt="Street 1">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop" alt="Street 2">
+                    </div>
+                    <span class="category-badge">Street Style</span>
+                </div>
+                <div class="card-content">
+                    <h3>Urban Style Icons Setting Trends Worldwide</h3>
+                    <p>From Tokyo to New York, these street style stars are inspiring fashion.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 10, 2026</span>
+                        <span><i class="far fa-eye"></i> 15.6K views</span>
+                    </div>
+                    <a href="#" class="smartlink-btn">See More</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop" alt="Street 3">
+                        <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?w=400&h=500&fit=crop" alt="Street 4">
+                    </div>
+                    <span class="category-badge">Street Style</span>
+                </div>
+                <div class="card-content">
+                    <h3>How to Master the Athleisure Street Look</h3>
+                    <p>Comfort meets style in these trendy casual outfits.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 8, 2026</span>
+                        <span><i class="far fa-eye"></i> 13.2K views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1529245019870-59b249281f2f?w=400&h=500&fit=crop" alt="Street 5">
+                        <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?w=400&h=500&fit=crop" alt="Street 6">
+                    </div>
+                    <span class="category-badge">Street Style</span>
+                </div>
+                <div class="card-content">
+                    <h3>Denim on Denim: The Street Style Comeback</h3>
+                    <p>Why the double denim trend is here to stay this season.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 6, 2026</span>
+                        <span><i class="far fa-eye"></i> 10.8K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ad Grid Item -->
+<div class="ad-mid">
+    <div class="ad-frame">
+        <span>300×250 Advertisement</span>
+    </div>
+</div>
+
+<!-- Fitness & Gym Section -->
+<section class="category-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-dumbbell"></i> Latest in Fitness & Gym</h2>
+            <a href="pages/category.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop" alt="Fitness 1">
+                        <img src="https://images.unsplash.com/photo-1520962922320-2038eebab146?w=400&h=500&fit=crop" alt="Fitness 2">
+                    </div>
+                    <span class="category-badge">Fitness & Gym</span>
+                </div>
+                <div class="card-content">
+                    <h3>Gym Fashion: Look Hot While You Sweat</h3>
+                    <p>The best activewear that keeps you stylish during workouts.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 9, 2026</span>
+                        <span><i class="far fa-eye"></i> 19.4K views</span>
+                    </div>
+                    <a href="#" class="smartlink-btn">See More</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=400&h=500&fit=crop" alt="Fitness 3">
+                        <img src="https://images.unsplash.com/photo-1515688594390-b649af70d282?w=400&h=500&fit=crop" alt="Fitness 4">
+                    </div>
+                    <span class="category-badge">Fitness & Gym</span>
+                </div>
+                <div class="card-content">
+                    <h3>Celebrity Workout Routines That Actually Work</h3>
+                    <p>Train like the stars with these proven fitness programs.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 7, 2026</span>
+                        <span><i class="far fa-eye"></i> 14.1K views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&h=500&fit=crop" alt="Fitness 5">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8780d?w=400&h=500&fit=crop" alt="Fitness 6">
+                    </div>
+                    <span class="category-badge">Fitness & Gym</span>
+                </div>
+                <div class="card-content">
+                    <h3>Athleisure Wear That Works Beyond the Gym</h3>
+                    <p>Transition seamlessly from workout to weekend errands.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 5, 2026</span>
+                        <span><i class="far fa-eye"></i> 11.5K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Celebrity Section -->
+<section class="category-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-star"></i> Latest in Celebrity</h2>
+            <a href="pages/category.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1502680390548-bdbac40a9b23?w=400&h=500&fit=crop" alt="Celebrity 1">
+                        <img src="https://images.unsplash.com-photo-1519451261425-7462ad2056fa?w=400&h=500&fit=crop" alt="Celebrity 2">
+                    </div>
+                    <span class="category-badge">Celebrity</span>
+                </div>
+                <div class="card-content">
+                    <h3>Celebrity Style Secrets You Can Recreate</h3>
+                    <p>Steal these celebrity looks without breaking the bank.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 10, 2026</span>
+                        <span><i class="far fa-eye"></i> 28.9K views</span>
+                    </div>
+                    <a href="#" class="smartlink-btn">See More</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&h=500&fit=crop" alt="Celebrity 3">
+                        <img src="https://images.unsplash.com-photo-1496449903678-68ddcb189a24?w=400&h=500&fit=crop" alt="Celebrity 4">
+                    </div>
+                    <span class="category-badge">Celebrity</span>
+                </div>
+                <div class="card-content">
+                    <h3>Red Carpet Moments That Broke the Internet</h3>
+                    <p>These iconic celebrity appearances had everyone talking.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 8, 2026</span>
+                        <span><i class="far fa-eye"></i> 32.4K views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400&h=500&fit=crop" alt="Celebrity 5">
+                        <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?w=400&h=500&fit=crop" alt="Celebrity 6">
+                    </div>
+                    <span class="category-badge">Celebrity</span>
+                </div>
+                <div class="card-content">
+                    <h3>Influencer Fashion: Who's Wearing What</h3>
+                    <p>The latest outfits from your favorite social media stars.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 6, 2026</span>
+                        <span><i class="far fa-eye"></i> 21.7K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ad Grid Item -->
+<div class="ad-mid">
+    <div class="ad-frame">
+        <span>300×250 Advertisement</span>
+    </div>
+</div>
+
+<!-- Summer Style Section -->
+<section class="category-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-sun"></i> Latest in Summer Style</h2>
+            <a href="pages/category.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=400&h=500&fit=crop" alt="Summer 1">
+                        <img src="https://images.unsplash.com-photo-1516589178581-6cd7833ae3b2?w=400&h=500&fit=crop" alt="Summer 2">
+                    </div>
+                    <span class="category-badge">Summer Style</span>
+                </div>
+                <div class="card-content">
+                    <h3>Hottest Summer Fashion Trends of 2026</h3>
+                    <p>Stay cool and stylish with these essential summer pieces.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 10, 2026</span>
+                        <span><i class="far fa-eye"></i> 22.3K views</span>
+                    </div>
+                    <a href="#" class="smartlink-btn">See More</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&h=500&fit=crop" alt="Summer 3">
+                        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=500&fit=crop" alt="Summer 4">
+                    </div>
+                    <span class="category-badge">Summer Style</span>
+                </div>
+                <div class="card-content">
+                    <h3>Sundresses That Are Summer Essentials</h3>
+                    <p>Light, breezy, and absolutely gorgeous for the season.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 8, 2026</span>
+                        <span><i class="far fa-eye"></i> 16.8K views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1580086319619-3ed498161c77?w=400&h=500&fit=crop" alt="Summer 5">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=500&fit=crop" alt="Summer 6">
+                    </div>
+                    <span class="category-badge">Summer Style</span>
+                </div>
+                <div class="card-content">
+                    <h3>Summer Vacation Wardrobe Packing Guide</h3>
+                    <p>Everything you need to pack for the perfect getaway.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 6, 2026</span>
+                        <span><i class="far fa-eye"></i> 13.4K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wedding Section -->
+<section class="category-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-ring"></i> Latest in Wedding</h2>
+            <a href="pages/category.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=400&h=500&fit=crop" alt="Wedding 1">
+                        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?w=400&h=500&fit=crop" alt="Wedding 2">
+                    </div>
+                    <span class="category-badge">Wedding</span>
+                </div>
+                <div class="card-content">
+                    <h3>Celebrity Wedding Fashion That Stole the Show</h3>
+                    <p>The most stunning celebrity weddings and their iconic gowns.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 9, 2026</span>
+                        <span><i class="far fa-eye"></i> 25.1K views</span>
+                    </div>
+                    <a href="#" class="smartlink-btn">See More</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=400&h=500&fit=crop" alt="Wedding 3">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop" alt="Wedding 4">
+                    </div>
+                    <span class="category-badge">Wedding</span>
+                </div>
+                <div class="card-content">
+                    <h3>2026 Wedding Guest Outfit Inspiration</h3>
+                    <p>What to wear to every type of wedding this season.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 7, 2026</span>
+                        <span><i class="far fa-eye"></i> 18.6K views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=500&fit=crop" alt="Wedding 5">
+                        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=400&h=500&fit=crop" alt="Wedding 6">
+                    </div>
+                    <span class="category-badge">Wedding</span>
+                </div>
+                <div class="card-content">
+                    <h3>Alternative Bridal Fashion for Modern Brides</h3>
+                    <p>Break the tradition with these unique bridal style ideas.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 5, 2026</span>
+                        <span><i class="far fa-eye"></i> 14.2K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ad Grid Item -->
+<div class="ad-mid">
+    <div class="ad-frame">
+        <span>300×250 Advertisement</span>
+    </div>
+</div>
+
+<!-- Luxury Section -->
+<section class="category-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-gem"></i> Latest in Luxury</h2>
+            <a href="pages/category.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&h=500&fit=crop" alt="Luxury 1">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=500&fit=crop" alt="Luxury 2">
+                    </div>
+                    <span class="category-badge">Luxury</span>
+                </div>
+                <div class="card-content">
+                    <h3>Designer Handbags Worth the Investment</h3>
+                    <p>These luxury bags hold their value and elevate any outfit.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 10, 2026</span>
+                        <span><i class="far fa-eye"></i> 20.8K views</span>
+                    </div>
+                    <a href="#" class="smartlink-btn">See More</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=500&fit=crop" alt="Luxury 3">
+                        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&h=500&fit=crop" alt="Luxury 4">
+                    </div>
+                    <span class="category-badge">Luxury</span>
+                </div>
+                <div class="card-content">
+                    <h3>Luxury Watches That Define Elegance</h3>
+                    <p>The timepieces worn by the world's most stylish celebrities.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 8, 2026</span>
+                        <span><i class="far fa-eye"></i> 17.5K views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=500&fit=crop" alt="Luxury 5">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=500&fit=crop" alt="Luxury 6">
+                    </div>
+                    <span class="category-badge">Luxury</span>
+                </div>
+                <div class="card-content">
+                    <h3>Most Expensive Celebrity Homes</h3>
+                    <p>Inside the breathtaking mansions of the rich and famous.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 6, 2026</span>
+                        <span><i class="far fa-eye"></i> 29.3K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Date Night Section -->
+<section class="category-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-heart"></i> Latest in Date Night</h2>
+            <a href="pages/category.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=400&h=500&fit=crop" alt="Date Night 1">
+                        <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&h=500&fit=crop" alt="Date Night 2">
+                    </div>
+                    <span class="category-badge">Date Night</span>
+                </div>
+                <div class="card-content">
+                    <h3>Perfect Date Night Outfits That Wow</h3>
+                    <p>Make a lasting impression with these romantic style picks.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 10, 2026</span>
+                        <span><i class="far fa-eye"></i> 18.7K views</span>
+                    </div>
+                    <a href="#" class="smartlink-btn">See More</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=500&fit=crop" alt="Date Night 3">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="Date Night 4">
+                    </div>
+                    <span class="category-badge">Date Night</span>
+                </div>
+                <div class="card-content">
+                    <h3>First Date Fashion Do's and Don'ts</h3>
+                    <p>Nail the perfect look without trying too hard.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 8, 2026</span>
+                        <span><i class="far fa-eye"></i> 15.3K views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=500&fit=crop" alt="Date Night 5">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=500&fit=crop" alt="Date Night 6">
+                    </div>
+                    <span class="category-badge">Date Night</span>
+                </div>
+                <div class="card-content">
+                    <h3>Romantic Dinner Outfit Ideas for Every Season</h3>
+                    <p>Dress for the occasion with these timeless looks.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 6, 2026</span>
+                        <span><i class="far fa-eye"></i> 12.9K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ad Grid Item -->
+<div class="ad-mid">
+    <div class="ad-frame">
+        <span>300×250 Advertisement</span>
+    </div>
+</div>
+
+<!-- Athleisure Section -->
+<section class="category-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-running"></i> Latest in Athleisure</h2>
+            <a href="pages/category.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop" alt="Athleisure 1">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=500&fit=crop" alt="Athleisure 2">
+                    </div>
+                    <span class="category-badge">Athleisure</span>
+                </div>
+                <div class="card-content">
+                    <h3>Athleisure Trends That Redefine Casual Chic</h3>
+                    <p>From yoga pants to street style, these looks do it all.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 9, 2026</span>
+                        <span><i class="far fa-eye"></i> 16.4K views</span>
+                    </div>
+                    <a href="#" class="smartlink-btn">See More</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=400&h=500&fit=crop" alt="Athleisure 3">
+                        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=500&fit=crop" alt="Athleisure 4">
+                    </div>
+                    <span class="category-badge">Athleisure</span>
+                </div>
+                <div class="card-content">
+                    <h3>Best Leggings for Every Body Type</h3>
+                    <p>Find your perfect pair with these flattering options.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 7, 2026</span>
+                        <span><i class="far fa-eye"></i> 13.8K views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="card-images">
+                    <div class="dual-images">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=500&fit=crop" alt="Athleisure 5">
+                        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&h=500&fit=crop" alt="Athleisure 6">
+                    </div>
+                    <span class="category-badge">Athleisure</span>
+                </div>
+                <div class="card-content">
+                    <h3>Celebrity Athleisure Looks You Can Copy</h3>
+                    <p>Get the comfy-chic style of your favorite stars.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> Jul 5, 2026</span>
+                        <span><i class="far fa-eye"></i> 11.1K views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- All Categories Grid -->
+<section class="all-categories">
+    <div class="container">
+        <div class="section-header">
+            <h2>All Categories</h2>
+            <a href="pages/category.html" class="view-all">Browse All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="categories-grid">
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-tshirt"></i>
+                <span>Fashion</span>
+                <small>248 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-spa"></i>
+                <span>Beauty</span>
+                <small>186 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-umbrella-beach"></i>
+                <span>Beach & Swimwear</span>
+                <small>134 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-cocktail"></i>
+                <span>Nightlife & Club</span>
+                <small>97 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-road"></i>
+                <span>Street Style</span>
+                <small>165 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-dumbbell"></i>
+                <span>Fitness & Gym</span>
+                <small>112 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-star"></i>
+                <span>Celebrity</span>
+                <small>312 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-sun"></i>
+                <span>Summer Style</span>
+                <small>89 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-ring"></i>
+                <span>Wedding</span>
+                <small>76 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-gem"></i>
+                <span>Luxury</span>
+                <small>143 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-heart"></i>
+                <span>Date Night</span>
+                <small>68 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-running"></i>
+                <span>Athleisure</span>
+                <small>104 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-glasses"></i>
+                <span>Accessories</span>
+                <small>156 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-shoe-prints"></i>
+                <span>Footwear</span>
+                <small>98 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-palette"></i>
+                <span>Hair & Color</span>
+                <small>121 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-crown"></i>
+                <span>Streetwear</span>
+                <small>87 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-tshirt"></i>
+                <span>Menswear</span>
+                <small>178 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-female"></i>
+                <span>Womenswear</span>
+                <small>234 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-magic"></i>
+                <span>Makeup</span>
+                <small>167 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-camera"></i>
+                <span>Photoshoot</span>
+                <small>92 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-plane"></i>
+                <span>Travel Style</span>
+                <small>74 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-gift"></i>
+                <span>Gift Guides</span>
+                <small>56 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-home"></i>
+                <span>Lifestyle</span>
+                <small>145 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-utensils"></i>
+                <span>Food & Drink</span>
+                <small>83 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-music"></i>
+                <span>Music & Style</span>
+                <small>109 Articles</small>
+            </a>
+            <a href="pages/category.html" class="category-item">
+                <i class="fas fa-film"></i>
+                <span>Entertainment</span>
+                <small>198 Articles</small>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Stay in the Loop</h2>
+            <p>Get the latest fashion trends, celebrity news, and style inspiration delivered straight to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Adsterra Social Bar -->
+<div class="ad-social-bar"><!-- Adsterra Social Bar --></div>
+
+<!-- HilltopAds MultiTag -->
+<div class="ad-multi-tag"><!-- HilltopAds MultiTag --></div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Global<span>Crush</span></h3>
+                <p>Your daily dose of celebrity lifestyle, fashion trends, and entertainment news.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/category.html">Categories</a></li>
+                    <li><a href="pages/trending.html">Trending</a></li>
+                    <li><a href="pages/about.html">About Us</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="pages/category.html">Fashion</a></li>
+                    <li><a href="pages/category.html">Beauty</a></li>
+                    <li><a href="pages/category.html">Beach & Swimwear</a></li>
+                    <li><a href="pages/category.html">Nightlife</a></li>
+                    <li><a href="pages/category.html">Fitness</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="pages/about.html">Privacy Policy</a></li>
+                    <li><a href="pages/about.html">Terms of Service</a></li>
+                    <li><a href="pages/about.html">Cookie Policy</a></li>
+                    <li><a href="pages/about.html">DMCA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GlobalCrush. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+</body>
+</html>

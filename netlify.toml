@@ -1,0 +1,45 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+  from = "/article"
+  to = "/pages/article.html"
+  status = 200
+
+[[redirects]]
+  from = "/category"
+  to = "/pages/category.html"
+  status = 200
+
+[[redirects]]
+  from = "/trending"
+  to = "/pages/trending.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/pages/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/pages/contact.html"
+  status = 200
