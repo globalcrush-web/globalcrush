@@ -303,24 +303,22 @@ ul { list-style: none; }
 
 /* Top Banner 728x90 */
 .ad-top {
-    background: var(--white);
-    padding: 15px 0;
+    background: transparent;
+    padding: 0;
     text-align: center;
-    border-bottom: 1px solid var(--border);
+    border-bottom: none;
 }
 .ad-top .container { display: flex; justify-content: center; }
 .ad-top .ad-frame {
     width: 728px;
     max-width: 100%;
     min-height: 90px;
-    background: var(--gray-light);
-    border: 2px dashed var(--border);
-    border-radius: var(--radius-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--gray);
-    font-size: 13px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    font-size: 0;
+    color: transparent;
 }
 
 /* Mid Content 300x250 */
@@ -333,14 +331,12 @@ ul { list-style: none; }
     width: 300px;
     max-width: 100%;
     min-height: 250px;
-    background: var(--gray-light);
-    border: 2px dashed var(--border);
-    border-radius: var(--radius-sm);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--gray);
-    font-size: 13px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    font-size: 0;
+    color: transparent;
 }
 
 /* In-Article Ad (between paragraphs) */
@@ -353,14 +349,12 @@ ul { list-style: none; }
     width: 728px;
     max-width: 100%;
     min-height: 90px;
-    background: var(--gray-light);
-    border: 2px dashed var(--border);
-    border-radius: var(--radius-sm);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--gray);
-    font-size: 13px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    font-size: 0;
+    color: transparent;
 }
 
 /* Sidebar Ad */
@@ -372,14 +366,12 @@ ul { list-style: none; }
     width: 300px;
     max-width: 100%;
     min-height: 600px;
-    background: var(--gray-light);
-    border: 2px dashed var(--border);
-    border-radius: var(--radius-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--gray);
-    font-size: 13px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    font-size: 0;
+    color: transparent;
 }
 
 /* Social Bar (Adsterra - sticky bottom) */
@@ -413,9 +405,9 @@ ul { list-style: none; }
     align-items: center;
     justify-content: center;
     min-height: 250px;
-    background: var(--gray-light);
-    border: 2px dashed var(--border);
-    border-radius: var(--radius-sm);
+    background: transparent;
+    border: none;
+    border-radius: 0;
 }
 .ad-grid-item .ad-frame {
     width: 300px;
@@ -424,8 +416,39 @@ ul { list-style: none; }
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--gray);
-    font-size: 13px;
+    font-size: 0;
+    color: transparent;
+    overflow: hidden;
+}
+
+/* HilltopAds MultiTag */
+.hilltopads-multitag {
+    padding: 0;
+    text-align: center;
+    background: transparent;
+    border: none;
+}
+.hilltopads-multitag .ad-frame {
+    font-size: 0;
+    color: transparent;
+    min-height: 0;
+    background: transparent;
+    border: none;
+}
+
+/* Hide all ad placeholder text */
+.ad-frame span,
+.ad-frame div,
+.ad-frame {
+    font-size: 0 !important;
+    color: transparent !important;
+    line-height: 0 !important;
+}
+
+/* Hide category badges on article cards */
+.card-images .category-badge,
+.article-card-dual .article-card-category {
+    display: none !important;
 }
 
 /* Smartlink (Adsterra - in buttons) */
