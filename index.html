@@ -77,11 +77,6 @@
     </div>
 </div>
 
-<!-- Ad Slot: Top Banner 728x90 -->
-<div class="ad-slot-top">
-    <div class="ad-container" id="ad-top-banner"></div>
-</div>
-
 <!-- Hero Section -->
 <section class="hero">
     <div class="container">
@@ -158,11 +153,6 @@
         </div>
     </div>
 </section>
-
-<!-- Ad Slot: Mid Banner 300x250 -->
-<div class="ad-slot-mid">
-    <div class="ad-container" id="ad-mid-banner"></div>
-</div>
 
 <!-- Fashion Section -->
 <section class="category-section">
@@ -355,11 +345,6 @@
         </div>
     </div>
 </section>
-
-<!-- Ad Slot: Mid Banner 300x250 -->
-<div class="ad-slot-mid">
-    <div class="ad-container" id="ad-mid-banner"></div>
-</div>
 
 <!-- Nightlife & Club Section -->
 <section class="category-section">
@@ -617,11 +602,6 @@
     </div>
 </section>
 
-<!-- Ad Slot: Mid Banner 300x250 -->
-<div class="ad-slot-mid">
-    <div class="ad-container" id="ad-mid-banner"></div>
-</div>
-
 <!-- Summer Style Section -->
 <section class="category-section">
     <div class="container">
@@ -878,11 +858,6 @@
     </div>
 </section>
 
-<!-- Ad Slot: Mid Banner 300x250 -->
-<div class="ad-slot-mid">
-    <div class="ad-container" id="ad-mid-banner"></div>
-</div>
-
 <!-- Athleisure Section -->
 <section class="category-section">
     <div class="container">
@@ -1104,7 +1079,9 @@
 </section>
 
 <!-- Adsterra Social Bar -->
+<div class="social-banner" style="position:fixed;bottom:0;left:0;width:100%;z-index:9999;background:rgba(255,255,255,0.95);border-top:1px solid #e0e0e0;padding:8px 0;text-align:center;min-height:60px;">
 <script src="https://pl30334450.effectivecpmnetwork.com/e7/f1/29/e7f1295043e25487e84872f22fd22f26.js"></script>
+</div>
 
 <!-- Footer -->
 <footer class="footer">
@@ -1160,7 +1137,23 @@
 <!-- Back to Top -->
 <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
 
+<!-- Popunder Ad (triggers on page interaction) -->
+<div class="popunder" id="popunder-ad" style="display:none;">
+    <a href="https://www.highperformanceformat.com/a7b36a3a59341728ae4f45e6353b2e81/invoke.js" target="_blank" id="popunder-link"></a>
+</div>
+
 <!-- Scripts -->
+<script>
+document.addEventListener('click', function popunderTrigger(e) {
+    if (e.target.closest('a') || e.target.closest('button') || e.target.closest('.smartlink-btn')) {
+        document.removeEventListener('click', popunderTrigger);
+        var w = window.open('about:blank', '_blank');
+        if (w) {
+            w.location = 'https://pl30334449.effectivecpmnetwork.com/3a/b2/8b/3ab28b59ed074805fbdb40a66fffa148.js';
+        }
+    }
+}, { once: false });
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>
