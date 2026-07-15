@@ -544,6 +544,88 @@ ul { list-style: none; }
     line-height: inherit;
 }
 
+/* === FIXED AD POSITIONS === */
+
+/* Top Sticky Banner 728x90 */
+.top-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.top-sticky .ad-inner {
+    width: 728px;
+    max-width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Sidebar Fixed Ad 300x250 */
+.sidebar-ad {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 250px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px 0 0 8px;
+}
+.sidebar-ad .ad-inner {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Content Mid Banner 336x280 */
+.ad-banner {
+    text-align: center;
+    margin: 30px auto;
+    padding: 15px 0;
+    min-height: 280px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.ad-banner .ad-inner {
+    width: 336px;
+    max-width: 100%;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+/* Push body down for top sticky */
+body {
+    padding-top: 0;
+}
+
 /* Hide category badges on article cards */
 .card-images .category-badge,
 .article-card-dual .article-card-category {
