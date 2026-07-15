@@ -1137,23 +1137,14 @@
 <!-- Back to Top -->
 <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
 
-<!-- Popunder Ad (triggers on page interaction) -->
-<div class="popunder" id="popunder-ad" style="display:none;">
-    <a href="https://www.highperformanceformat.com/a7b36a3a59341728ae4f45e6353b2e81/invoke.js" target="_blank" id="popunder-link"></a>
+<!-- Popunder Ad -->
+<div class="popunder" style="position:fixed;bottom:60px;left:0;width:1px;height:1px;overflow:hidden;opacity:0.01;z-index:-1;">
+    <div style="width:300px;height:250px;background:#f5f5f5;">
+        <script src="https://pl30334449.effectivecpmnetwork.com/3a/b2/8b/3ab28b59ed074805fbdb40a66fffa148.js"></script>
+    </div>
 </div>
 
 <!-- Scripts -->
-<script>
-document.addEventListener('click', function popunderTrigger(e) {
-    if (e.target.closest('a') || e.target.closest('button') || e.target.closest('.smartlink-btn')) {
-        document.removeEventListener('click', popunderTrigger);
-        var w = window.open('about:blank', '_blank');
-        if (w) {
-            w.location = 'https://pl30334449.effectivecpmnetwork.com/3a/b2/8b/3ab28b59ed074805fbdb40a66fffa148.js';
-        }
-    }
-}, { once: false });
-</script>
 <script src="js/main.js"></script>
 </body>
 </html>
